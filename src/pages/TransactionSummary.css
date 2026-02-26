@@ -1,0 +1,42 @@
+.summary-container {
+  padding: 40px;
+  background: #0f172a;
+  min-height: 100vh;
+  color: white;
+}
+
+.summary-container h2 {
+  margin-bottom: 20px;
+}
+
+.summary-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.summary-card {
+  background: #1f2937;
+  padding: 25px;
+  border-radius: 12px;
+  transition: 0.3s ease;
+}
+
+.summary-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+
+.summary-card.success h1 { color: #22c55e; }
+.summary-card.failed h1 { color: #ef4444; }
+.summary-card.pending h1 { color: #facc15; }
+.summary-card.fraud h1 { color: #f97316; }
+
+.system-health {
+  margin-top: 30px;
+  padding: 20px;
+  background: #111827;
+  border-radius: 12px;
+  text-align: center;
+  font-size: 18px;
+}
